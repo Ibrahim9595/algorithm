@@ -10,9 +10,9 @@ function appendAndDelete(s, t, k) {
     if (s[i] !== t[i]) break;
   }
 
-  const l = s.length + t.length - 2 * i;
+  const l = k - (s.length + t.length - 2 * i);
 
-  return s === t || (k >= l && k % 2 === l % 2) ? "Yes" : "No";
+  return l >= 0 && (l % 2 === 0 || (l % 2 === 1 && l > 2 * i)) ? "Yes" : "No";
 }
 
-console.log(appendAndDelete("qwerasdf", "qwerbsdf", 6));
+console.log(appendAndDelete("abc", "abc", 5));
