@@ -1,3 +1,4 @@
+//https://www.hackerrank.com/challenges/the-hurdle-race/problem
 // Complete the hurdleRace function below.
 function hurdleRace(k, height) {
   const diff = Math.max(...height) - k;

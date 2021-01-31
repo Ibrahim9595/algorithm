@@ -1,3 +1,5 @@
+//https://www.hackerrank.com/challenges/magic-square-forming/problem
+
 const rotate90 = (m) => m[0].map((x, i) => m.map((x) => x[i]).reverse());
 /**
  *
@@ -12,19 +14,23 @@ const rotaten90 = (arr, n) =>
  * @returns {number[][]}
  */
 const constructMagicSquares = () => {
-  return new Array(4)
-    .fill(0)
-    .map((_, i) =>
-      rotaten90(
-        [
-          [8, 1, 6],
-          [3, 5, 7],
-          [4, 9, 2],
-        ],
-        i
+  return (
+    new Array(4)
+      .fill(0)
+      .map((_, i) =>
+        // get the rotation of every angle 90,180,270,360
+        rotaten90(
+          [
+            [8, 1, 6],
+            [3, 5, 7],
+            [4, 9, 2],
+          ],
+          i
+        )
       )
-    )
-    .reduce((p, c) => [...p, c, c.map((_el) => _el.slice().reverse())], []);
+      // Get the reflection of each magic square
+      .reduce((p, c) => [...p, c, c.map((_el) => _el.slice().reverse())], [])
+  );
 };
 
 /**

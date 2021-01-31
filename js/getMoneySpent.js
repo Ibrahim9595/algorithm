@@ -1,3 +1,4 @@
+//https://www.hackerrank.com/challenges/electronics-shop/problem
 /**
  *
  * @param {number[]} keyboards

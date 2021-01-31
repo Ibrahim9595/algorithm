@@ -1,3 +1,4 @@
+//https://leetcode.com/problems/integer-to-roman/
 const intToRomanElement = (base, num) => {
   const map = {
     1: "I",
@@ -28,7 +29,10 @@ const intToRomanElement = (base, num) => {
 
 const intToRoman = (num) => {
   const l = num.toString().length - 1;
-  return num.split("").map((el, i) => intToRomanElement(10 ** (l - i), el)).join('');
+  return num
+    .split("")
+    .map((el, i) => intToRomanElement(10 ** (l - i), el))
+    .join("");
 };
 
 ["3", "5", "9", "58", "1994", "3999"].forEach((el) =>

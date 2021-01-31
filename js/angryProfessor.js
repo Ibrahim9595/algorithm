@@ -1,3 +1,4 @@
+//https://www.hackerrank.com/challenges/absolute-permutation/problem?h_r=internal-search
 /**
  *
  * @param {number} k

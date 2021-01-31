@@ -1,4 +1,10 @@
-// Complete the circularArrayRotation function below.
+//https://www.hackerrank.com/challenges/circular-array-rotation/problem
+/**
+ *
+ * @param {number[]} a
+ * @param {number} k
+ * @param {number[]} queries
+ */
 const circularArrayRotation = (a, k, queries) => {
   const rotated = [
     ...(a.slice([a.length - (k % a.length)]) || []),
