@@ -32,19 +32,17 @@ const longestCommonSubsequence = (text1, text2) => {
  * @return {number}
  */
 const longestCommonSubsequenceRec = (text1, text2) => {
+  let solution;
   const memo = initMemo(text1.length, text2.length);
   const solve = (i, j) => {
     if (i < 0 || j < 0) return 0;
 
     if (memo[i][j]) return memo[i][j];
 
-    if (text1[i] === text2[j]) {
-      const solution = solve(i - 1, j - 1) + 1;
-      memo[i][j] = solution;
-      return solution;
-    }
-
-    const solution = Math.max(solve(i - 1, j), solve(i, j - 1));
+    if (text1[i] === text2[j]) solution = solve(i - 1, j - 1) + 1;
+    
+    else solution = Math.max(solve(i - 1, j), solve(i, j - 1));
+    
     memo[i][j] = solution;
     return solution;
   };
