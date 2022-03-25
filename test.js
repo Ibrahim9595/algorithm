@@ -26,19 +26,47 @@
 // );
 // console.log(`result=${result}, Time = ${(Date.now() - then) / 1000}secs`);
 
-const test = () => {
-  const x = new Array(101).fill(0);
+// const test = () => {
+//   const x = new Array(101).fill(0);
 
-  for (let i = 1; i <= 100; i++) {
-    for (let j = i; j <= 100; j += i) {
-      x[j] = x[j] === 1 ? 0 : 1;
-    }
+//   for (let i = 1; i <= 100; i++) {
+//     for (let j = i; j <= 100; j += i) {
+//       x[j] = x[j] === 1 ? 0 : 1;
+//     }
 
-    if (i === 100) break;
-  }
+//     if (i === 100) break;
+//   }
 
-  console.log(x.map((el, i) => (el === 1 ? i : -1)).filter((el) => el !== -1));
-  console.log(x.reduce((p, c) => p + c));
-};
+//   console.log(x.map((el, i) => (el === 1 ? i : -1)).filter((el) => el !== -1));
+//   console.log(x.reduce((p, c) => p + c));
+// };
 
-test();
+// test();
+
+/** Template for reading input from stdio
+'use strict';
+
+process.stdin.resume();
+process.stdin.setEncoding('utf-8');
+
+let inputString = '';
+let currentLine = 0;
+
+process.stdin.on('data', function(inputStdin) {
+    inputString += inputStdin;
+});
+
+process.stdin.on('end', function() {
+    inputString = inputString.split('\n');
+
+    main();
+});
+
+function readLine() {
+    return inputString[currentLine++];
+}
+
+
+function main() {
+}
+*/
