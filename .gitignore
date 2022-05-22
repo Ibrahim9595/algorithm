@@ -2,3 +2,5 @@ python/
 c/
 .vscode/
 __pycache__
+
+test.*
