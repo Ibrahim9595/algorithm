@@ -1,0 +1,16 @@
+Topological sort
+DFS/BFS
+*2-D Matrix Prefix Sum
+Binary Search over functions
+Quick sort/Quick select
+Merge sort
+*Dijkstra/Bellman Ford/ Floyd Warshall/ Kruskals Minimum Spanning Tree
+UnionFind
+Trie
+*Min-max Games
+Cycle Detection
+Intervals
+*Segment Tree
+*KMP
+*Bridges/Articulation point/Tarjan SCC
+*Euler's Path/Circuit/Hierholzer's Algorithm
