@@ -1,16 +1,17 @@
 Topological sort
 DFS/BFS
-*2-D Matrix Prefix Sum
 Binary Search over functions
 Quick sort/Quick select
 Merge sort
-*Dijkstra/Bellman Ford/ Floyd Warshall/ Kruskals Minimum Spanning Tree
 UnionFind
 Trie
-*Min-max Games
 Cycle Detection
 Intervals
-*Segment Tree
-*KMP
-*Bridges/Articulation point/Tarjan SCC
+Segment Tree
+Dijkstra/Bellman Ford/ Floyd Warshall
+Bridges/Articulation point/Tarjan SCC
 *Euler's Path/Circuit/Hierholzer's Algorithm
+*Kruskals Minimum Spanning Tree
+*Min-max Games
+*2-D Matrix Prefix Sum
+*KMP
