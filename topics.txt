@@ -1,17 +1,21 @@
-Topological sort
-DFS/BFS
-Binary Search over functions
-Quick sort/Quick select
-Merge sort
-UnionFind
+-Merge sort
+-Quick sort/Quick select
+-Heap
+-Segment Tree/Finwick tree
 Trie
+UnionFind
+
+DFS/BFS
+Topological sort
 Cycle Detection
-Intervals
-Segment Tree
 Dijkstra/Bellman Ford/ Floyd Warshall
 Bridges/Articulation point/Tarjan SCC
 *Euler's Path/Circuit/Hierholzer's Algorithm
 *Kruskals Minimum Spanning Tree
+
+
+Binary Search over functions
 *Min-max Games
 *2-D Matrix Prefix Sum
 *KMP
+Intervals
