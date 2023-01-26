@@ -70,3 +70,25 @@ function readLine() {
 function main() {
 }
 */
+const arrayOne = [1, 4, 5, 7, 3, 8, 1, 9];
+const arrayTwo = [3, 7, 1, 12, 9, 5, 24, 16];
+
+const getDiff = (arr1, arr2) => {
+  const map = {};
+  const res = [];
+
+  for (let i = 0; i < arr1.length; i++) {
+    map[arr1[i]] = true;
+  }
+
+  for (let i = 0; i < arr2.length; i++) {
+    if (!map[arr2[i]]) {
+      res.push(arr2[i]);
+    }
+  }
+
+  return res;
+};
+
+console.log(`arr1 diff from arr2 in ${getDiff(arrayOne, arrayTwo)}`);
+console.log(`arr2 diff from arr1 in ${getDiff(arrayTwo, arrayOne)}`);

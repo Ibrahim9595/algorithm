@@ -19,11 +19,9 @@ class DisjSet:
         if repI == repJ:
             return
 
-        if rankI > rankJ:
+        if rankI >= rankJ:
             self.parent[repJ] = repI
-        elif rankI < rankJ:
-            self.parent[repI] = repJ
-
+            self.rank[repI] += 1
         else:
             self.parent[repI] = repJ
             self.rank[repJ] += 1
