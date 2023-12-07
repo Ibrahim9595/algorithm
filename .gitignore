@@ -4,3 +4,4 @@ c/
 __pycache__
 
 test.*
+node_modules/

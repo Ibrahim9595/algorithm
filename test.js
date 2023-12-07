@@ -110,18 +110,18 @@ const Fn = (run) => ({
 Fn.ask = Fn((x) => x);
 Fn.of = (x) => Fn(() => x);
 
-// const res = Fn.of("Test")
-//   .map(toUpper)
-//   .chain((upper) => Fn.ask.map((config) => [config, upper]))
-//   .run({port: 3000});
+const res = Fn.of("Test")
+  .map(toUpper)
+  .chain((upper) => Fn.ask.map((config) => [config, upper]))
+  .run({port: 3000});
 
-// console.log(res);
+console.log(res);
 
 // Endo works only on a -> a functions
-const Endo = run =>
-({
-    run,
-    concat: other => Endo(x => other.run(run(x)))
-})
+// const Endo = run =>
+// ({
+//     run,
+//     concat: other => Endo(x => other.run(run(x)))
+// })
 
-Endo.empty = () => Endo(x => x)
+// Endo.empty = () => Endo(x => x)
