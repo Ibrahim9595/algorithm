@@ -43,4 +43,5 @@ const handleLine2 = (line) => {
   return Object.values(mins).reduce((p, c) => p * c, 1);
 };
 
+console.log(sum(data.map(handleLine)));
 console.log(sum(data.map(handleLine2)));
